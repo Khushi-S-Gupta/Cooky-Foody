@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smooth Shakes - Cooky@FOODY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Start NavBar -->
+    <nav class="navbar bg-primary navbar-expand-lg bg-body-tertiary " data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Cooky@FOODY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Food-type
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./vegdishesrec.html">Veg - Dishes Recipes</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./seafood.html">Sea Food Dishes Recipes</a></li>
+                            <li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./nonvegdishesrec.html">Non-Veg - Dishes Recipes</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item active" href="./smoothshakesrec.html">Smooth Shakes Recipes</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item " href="./cakesrec.html">Cakes Recipes</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./fastfood.html">Fast - Food Recipes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <!-- Button trigger modal -->
+                    <button class="btn btn-outline-secondary" type="submit" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <!-- Button trigger modal -->
+                    <button class="btn btn-outline-secondary" type="submit" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End NavBar -->
+
+    <!-- sign up modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Sign up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="row g-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="inputname4" class="form-label">First Name</label>
+                                <input type="text" class="form-control" placeholder="First name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputname4" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="mail@email.com">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- log in modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Log in</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="row g-4">
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Log in</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Start row featurette-->
+    <!-- 1st row -->
+    <div class="container my-4">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Vanilla Coffee Shake</h2>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus veniam sapiente dolores
+                    doloremque, eum quam corrupti quod, officiis deserunt sint quaerat perspiciatis? Minus aperiam ea
+                    mollitia quos error. Fugiat molestiae recusandae est, minus, labore porro libero natus amet, sed
+                    nobis ipsa nemo similique consequatur. Soluta commodi nihil ipsam quo molestias?</p>
+            </div>
+            <div class="col-md-5">
+                <img src="https://source.unsplash.com/300x300/?shakes,VanillaCoffeeShake" class="img-fluid"
+                    alt="cakeimg1">
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <!-- 2nd row -->
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Soy Almond Shake</h2>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti quidem
+                    nostrum! Illum, omnis ex, maxime distinctio consequuntur dicta nisi officia, nostrum eveniet
+                    exercitationem unde id voluptatem fugiat iusto cupiditate neque debitis sit perferendis! Similique
+                    quibusdam, sunt rerum beatae itaque magnam eveniet fugit iste nisi ipsum unde impedit facere optio!
+                </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="https://source.unsplash.com/300x300/?shakes,soyAlmondShake" class="img-fluid" alt="cakeimg5">
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <!-- 3rd row -->
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Oatmeal Shake</h2>
+                <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos placeat maxime voluptas
+                    animi expedita assumenda minus, quidem, ducimus necessitatibus commodi, sint cupiditate. Nesciunt
+                    quae enim id minima animi alias quaerat impedit, veniam possimus porro odio dolorem labore aliquid
+                    corrupti beatae autem debitis numquam voluptates atque, obcaecati aut nisi dignissimos assumenda.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img src="https://source.unsplash.com/300x300/?shakes,oatmealShake" class="img-fluid" alt="cake4">
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <!-- 4th row -->
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Mineral Power Shake</h2>
+                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea iste, at suscipit, sit
+                    exercitationem accusantium earum magni illum ipsam aut eveniet culpa magnam consequatur! Omnis
+                    assumenda tempore quisquam nemo ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil repellendus est velit. Fugit, sapiente maiores voluptatem consectetur architecto optio
+                    deserunt!</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="https://source.unsplash.com/300x300/?shakes,MineralPowerShake" class="img-fluid" alt="cake4">
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <!-- 5th row -->
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Banana Almond Cream Shake</h2>
+                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, repellendus quisquam.
+                    Pariatur doloribus ea voluptatem repudiandae dolorem iure illo error dignissimos delectus ad! Neque
+                    doloribus consequatur, officiis sequi a explicabo adipisci esse distinctio placeat magni fugit
+                    deleniti cum eius nihil? Cupiditate similique praesentium nemo ex nobis sed facere pariatur enim?
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img src="https://source.unsplash.com/300x300/?shakes,BananaAlmondCreamShake" class="img-fluid"
+                    alt="cakeimg3">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="bg-light text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.1);">
+            © 2023 Copyright:
+            <span class="text-dark">Cooky@Foody</span>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
